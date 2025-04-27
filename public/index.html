@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akrom | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Sacramento&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- whatsap  -->
+  <div class="divWA flex-col items-center fixed bottom-5 right-2 gap-1 z-50 hidden">
+    <div class="z-50">
+      <i data-feather="arrow-down" class="w-7 h-7 lg:w-10 lg:h-10 text-[#075E54] z-50 animate-bounce"></i>
+    </div>
+    <a href="https://wa.me/085817304610" target="_blank" class="rounded-full bg-linear-30 from-[#075E54] to-[#25D366] z-50 p-2 h-fit w-fit hover:bg-linear-30 hover:from-[#25D366] hover:to-[#075E54] transition-colors duration-300 shadow-xs shadow-black/50">
+        <svg role="img" class="w-7 h-7 lg:w-10 lg:h-10 z-50 fill-tulisan-terang" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+  </div>
+  <!-- whatsap -->
+
+  <!-- header start -->
+  <header class="absolute z-20 top-0 left-0 right-0">
+    <div class="container m-auto">
+      <div class="flex items-center justify-between relative">
+        <div class="py-3 px-4">
+          <a href="#home" class="akrom-name font-bold font-bersin tracking-wide text-2xl text-lime-400 text-shadow lg:text-3xl lg:px-4">
+            Akrom Sofwan
+          </a>
+        </div>
+
+        <div class="flex px-4 items-center">
+          <button id="btn" name="btn" type="button" class="absolute block right-4 lg:hidden">
+            <span class="burger-line bg-tulisan-terang">
+
+            </span>
+            <span class="burger-line bg-tulisan-terang">
+
+            </span>
+            <span class="burger-line bg-tulisan-terang">
+
+            </span>
+          </button>
+
+          <div class="nav flex flex-col bg-white p-4 w-50 rounded-xl absolute top-full shadow-xl -right-full transition-all duration-700 ease-out lg:static lg:flex-row lg:w-full lg:items-center lg:bg-transparent lg:shadow-none lg:pt-4 lg:pb-2">
+            <a href="#home" class="font-semibold text-xl mb-3 text-tulisan-gelap lg:mr-6 lg:text-tulisan-terang lg:text-2xl after hover:text-slate-300 transition-all duration-500">
+              Home
+            </a>
+            <a href="#about" class="font-semibold text-xl mb-3 text-tulisan-gelap lg:mr-6 lg:text-tulisan-terang lg:text-2xl after hover:text-slate-300 transition-all duration-500">
+              About Me
+            </a>
+            <a href="#project" class="font-semibold text-xl mb-3 text-tulisan-gelap lg:mr-6 lg:text-tulisan-terang lg:text-2xl after hover:text-slate-300 transition-all duration-500">
+              Project
+            </a>
+            <a href="#team" class="font-semibold text-xl mb-3 text-tulisan-gelap lg:mr-6 lg:text-tulisan-terang lg:text-2xl after hover:text-slate-300 transition-all duration-500">
+              Team Project
+            </a>
+            <a href="#contact" class="font-semibold text-xl mb-3 text-tulisan-gelap lg:mr-6 lg:text-tulisan-terang lg:text-2xl after hover:text-slate-300 transition-all duration-500">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- hero section start -->
+  <section id="home" class="pt-34 pb-32 max-sm:h-svh rounded-b-4xl bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75%">
+    <div class="container m-auto 2xl:px-[100px]">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 lg:w-1/2 lg:mt-20 xl:mt-30 animasi-judul-hero">
+          <h1 class="text-slate-50 text-4xl font-bold mb-2 md:text-5xl text-shadow-lg/60 xl:text-6xl">
+            Akrom Sofwan
+          </h1>
+          <h2 class="text-tulisan-terang font-medium text-2xl my-2 md:text-3xl xl:text-3xl">
+            Bag Production Operator
+          </h2>
+          <p class="text-tulisan-terang font-medium text-base mt-6 mb-4 md:text-lg ">
+            Sewing with precision - quality in production
+          </p>
+          
+          <a href="#contact" class=" text-tulisan-gelap font-semibold text-base bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 transition-colors hover:shadow duration-500 px-4 py-2 rounded block w-fit max-lg:ml-4">
+            Hubungi Saya
+          </a>
+          
+        </div>
+        
+        <div class="w-full px-4 lg:px-0 lg:w-1/2 lg:ml-auto z-10">
+          <div class="div-foto w-3/4 m-auto mt-10 relative overflow-hidden rounded-full group md:w-1/2 lg:w-3/4 lg:ml-auto lg:mt-10 xl:mt-0">
+            <img src="../img/front/akrom.png" alt="akrom" class="foto-home max-w-full drop-shadow-2xl/60 animasi-foto-hero">
+            
+            <div class="bg-foto bg-linear-to-b from-slate-200 to-slate-50 rounded-full absolute -z-11 top-0 right-0 left-0 bottom-0 translate-y-full group-hover:translate-y-0  transition-all duration-500">
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+  <!-- about section start -->
+  <section id="about" class="pt-34 pb-32">
+    <div class="container m-auto 2xl:px-[100px]">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 lg:w-1/2" 
+        data-aos="fade-right"
+        data-aos-duration="2000">
+          <h2 class="text-lime-800 font-bold text-xl block mb-2 md:text-2xl xl:text-3xl">
+            About Me
+          </h2>
+          <h3 class="font-bold text-3xl mb-4 text-tulisan-gelap md:text-4xl">
+            Spesialis produksi tas, fokus pada presisi dan kualitas
+          </h3>
+          <p class="text-lg font-medium text-slate-600 lg:text-lg md:text-xl">
+            Halo 👋, Saya Akrom Sofwan, lahir pada 1 September 1997. Berpengalaman sebagai Bag Production Operator.
+          </p>
+          <p class="text-lg font-medium text-slate-600 lg:text-lg md:text-xl">
+            Saya telah bekerja di bidang produksi tas selama beberapa tahun. Berbagai jenis tas mulai dari backpack, sling bag, tote bag, hingga aksesoris lain seperti dompet telah menjadi bagian dari proyek yang saya kerjakan. 
+          </p>
+          <p class="text-lg font-medium text-slate-600 lg:text-lg md:text-xl">
+            Bagi saya, kualitas adalah kombinasi dari ketekunan, detail, dan konsistensi. Saya percaya bahwa produk yang baik berasal dari proses yang dikerjakan dengan hati dan penuh tanggung jawab. Itulah mengapa saya selalu menekankan presisi dalam setiap langkah pekerjaan saya.
+          </p>
+          <p class="text-lg font-medium text-slate-600 lg:text-lg md:text-xl">
+            Ke depan, saya ingin terus berkembang di bidang produksi tas dan menjajaki berbagai peluang kolaborasi dengan brand lokal maupun global. Saya percaya bahwa karya terbaik datang dari proses yang terus disempurnakan. Saya terbuka untuk tantangan dan siap menciptakan hasil produksi yang lebih baik lagi
+          </p>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2"
+        data-aos="fade-left"
+        data-aos-duration="2000">
+          <h3 class="font-semibold text-2xl mt-10 mb-2 lg:mt-13">
+            Mari berteman
+          </h3>
+          <p class="text-base font-medium text-slate-600 lg:text-lg mb-6">
+            Dapat terhubung dengan orang-orang baru adalah sebuah hal positif bagi saya, khususnya di bidang kreatif dan produksi. 
+            Jangan ragu untuk menyapa atau berdiskusi seputar dunia konveksi, kerajinan tangan, atau sekadar berbagi ide. 
+            Klik link di bawah ini untuk menjalin koneksi lebih lanjut.
+          </p>
+          <div class="sosmed flex items-center">
+            <a href="https://www.instagram.com/akrom_safyan/" target="_blank" class="border p-2 w-10 h-10 rounded-full mr-3 border-tulisan-gelap hover:border-secondary hover:bg-secondary group transition-all duration-300">
+              <svg role="img" viewBox="0 0 24 24" class="group-hover:fill-[#fff]" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" /></svg>
+            </a>
+            <a href="https://www.tiktok.com/@akrom_areskha" target="_blank" class="border p-2 w-10 h-10 rounded-full mr-3 text-tulisan-gelap hover:border-secondary hover:bg-secondary group transition-all duration-300">
+              <svg role="img" viewBox="0 0 24 24" class="group-hover:fill-[#fff]" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://web.facebook.com/akrom.slamming" target="_blank" class="border p-2 w-10 h-10 rounded-full mr-3 text-tulisan-gelap hover:border-secondary hover:bg-secondary group transition-all duration-300">
+              <svg role="img" viewBox="0 0 24 24" class="group-hover:fill-[#fff]" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section end -->
+
+  <!-- project section start -->
+  <section id="project" class="pt-34 pb-32 bg-radial-[at_25%_25%] from-purple-200/40 to-purple-100/60 to-75%">
+    <div class="container m-auto 2xl:px-[100px]">
+      <div class="w-full px-4 max-w-xl m-auto mb-12"
+      data-aos="fade-up"
+      data-aos-duration="1500">
+        <h2 class="text-lime-800 font-bold text-xl text-center block mb-2 md:text-2xl xl:text-3xl">
+          Portfolio
+        </h2>
+        <h3 class="font-bold text-3xl mb-4 text-tulisan-gelap text-center md:text-4xl">
+          Proyek Terbaru Saya
+        </h3>
+        <p class="text-lg font-medium text-slate-600 lg:text-lg md:text-xl text-center">
+          Dalam setiap proyek, saya berkomitmen untuk menghasilkan produk yang tidak hanya kuat dan fungsional, tetapi juga estetis. Berikut ini adalah beberapa hasil karya saya yang mencerminkan keahlian dan dedikasi saya di dunia konveksi tas.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap px-4 justify-center">
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden   shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/backpack.jpg" alt="backpack-1" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="kol-deks px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-colors duration-700">
+              Tas Ransel Serbaguna
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tas ransel kasual dengan desain minimalis, cocok untuk aktivitas harian, perjalanan, atau sekolah. Nyaman dan stylish dalam berbagai warna menarik.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 -sm:transition-colors -sm:duration-700">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden   shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/sling bag (2).jpg" alt="sling-bag-1" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Tas Selempang Modern
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tas selempang dengan bentuk compact, ideal untuk membawa barang penting saat beraktivitas santai atau traveling ringan.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 -sm:transition-colors -sm:duration-700">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden s  shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/sling bag (3).jpg" alt="sling-bag-2" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Mini Handbag Elegan
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tas kecil bergaya chic, dilengkapi pegangan tangan dan tali panjang. Cocok untuk acara santai maupun semi-formal.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 transition-colors duration-700 sm:transition-none">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden s  shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/sling bag.jpg" alt="sling-bag-3" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Tas Selempang Fashionable
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tas selempang bertekstur kulit dengan aksen metalik, menghadirkan kesan bold dan stylish untuk outfit harian maupun pesta.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 transition-colors duration-700 sm:transition-none">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden s  shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/tote bag (2).jpg" alt="tote-bag-1" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Tote Bag Premium
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tote bag berkapasitas besar dengan motif elegan, sempurna untuk membawa kebutuhan harian atau perlengkapan kerja.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 transition-colors duration-700 sm:transition-none">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden s  shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/tote bag (3).jpg" alt="tote-bag-2" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Tote Bag Minimalis
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tote bag kulit sintetis dengan desain sederhana, pas untuk gaya urban maupun casual sehari-hari.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 transition-colors duration-700 sm:transition-none">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden s  shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/tote bag.jpg" alt="tote-bag-3" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Tas Travel Stylish
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Tas jinjing serbaguna yang ideal untuk short trip atau kebutuhan gym, memadukan fungsionalitas dan gaya modern.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 transition-colors duration-700 sm:transition-none">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+
+        <div class="div-project w-sm h-fit mb-6 lg:mx-4 relative z-2 group rounded-xl overflow-hidden s  shadow-lg" data-aos="zoom-in">
+          <div class="div-foto-project relative rounded-xl overflow-hidden object-cover h-fit group">
+            <div class="foto-project-gelap absolute top-0 bottom-0 left-0 right-0 bg-black/50 -translate-y-full group-hover:translate-y-0 transition-all duration-500">
+              
+            </div>
+            <div class="foto-project-judul absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <h3 class="kalimat-operlay-gambar text-tulisan-terang font-extralight text-xl">
+                
+              </h3>
+            </div>
+            <img src="../img/project/wallet.jpg" alt="wallet-1" class="w-full object-cover h-65 object-center">
+          </div>
+
+          <div class="px-2 group-hover:scale-98 py-3 transition-all duration-500">
+            <h3 class="jud font-bold text-2xl mb-2 text-tulisan-gelap group-hover:text-tulisan-terang transition-color duration-700">
+              Dompet Elegan
+            </h3>
+            <p class="par text-base font-medium text-slate-600 lg:text-lg line-clamp-2 group-hover:text-tulisan-terang transition-color duration-700">
+              Dompet panjang dengan desain mewah, dilengkapi banyak slot kartu dan kompartemen uang, sempurna untuk tampilan elegan.
+            </p>
+            <a href="#" class="btn-selengkapnya block w-fit mb-2 underline text-base text-tulisan-gelap hover:text-black group-hover:text-slate-300 transition-colors duration-700 sm:transition-none">
+              Selengkapnya
+            </a>
+            <button type="button" name="btn-foto" id="btn-foto" class="py-1 px-4 text-lg font-semibold bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 text-tulisan-gelap rounded transition-colors hover:shadow duration-500">
+              Lihat foto
+            </button>
+          </div>
+
+          <div class="bg-project absolute top-0 left-0 right-0 bottom-0 bg-radial-[at_25%_25%] from-purple-600 to-purple-800 to-75% -z-1 scale-x-0 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100">
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="wadah-foto-besar bg-black/60 fixed top-0 right-0 left-0 bottom-0 z-30 flex items-center foto-besar-none">
+      <div class="w-full flex justify-center">
+        <img src="../img/project/foto contoh.jpg" alt="" class="shadow-lg shadow-black/30 w-svw sm:w-3/4 xl:w-min xl:h-svh scale-0 transition-all duration-500">
+        
+        <button id="btn-close-fotbes" class="absolute top-0 right-0 p-1.5 rounded-full bg-slate-800/60 scale-0 hover:bg-slate-500/60 hover:text-white transition-all duration-500 hover:pointer-coarse:">
+          <i data-feather="x" class="h-9 w-9 text-tulisan-terang"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- project section end -->
+
+  <!-- team section start -->
+  <section id="team" class="">
+    <div class="pt-34 pb-32 bg-radial-[at_25%_25%] from-lime-800 to-lime-900 to-75%">
+      <div class="container m-auto 2xl:px-[100px]">
+        <div class="w-full px-4 max-w-xl m-auto mb-12"
+        data-aos="fade-up"
+        data-aos-duration="1500">
+          <h2 class="text-purple-600 font-bold text-xl text-center block mb-2 md:text-2xl xl:text-3xl">
+            Team Project
+          </h2>
+          <h3 class="font-bold text-3xl mb-4 text-tulisan-terang text-center md:text-4xl">
+            My Collaboration Teams
+          </h3>
+          <p class="text-lg font-medium text-slate-300 lg:text-lg md:text-xl text-center">
+            Kolaborasi adalah inti dari apa yang saya lakukan. Berikut ini adalah merek-merek atau brand yang telah berbagi visi, pekerjaan, dan perjalanan dengan saya.
+          </p>
+        </div>
+
+        <div class="w-3/4 md:w-3/5 m-auto">
+          <div class="teamflex flex flex-wrap justify-center " data-aos="zoom-in">
+            <a href="https://flickabags.com/" target="_blank" class="w-20 p-2 m-4 border bg-slate-500/40 border-slate-400/60 block rounded-full hover:border-none hover:bg-tulisan-terang group md:w-24 lg:w-28 transition-all" >
+              <img src="../img/team/flicka bags.png" alt="flickabag" class="">
+            </a>
+            <a href="https://josvli.com/" target="_blank" class="w-20 p-2 m-4 border bg-slate-500/40 border-slate-400/60 block rounded-full hover:border-none hover:bg-tulisan-terang group md:w-24 lg:w-28 transition-all" >
+              <img src="../img/team/josvli.png" alt="josvli" class="">
+            </a>
+            <a href="https://merche.id/" target="_blank" class="w-20 p-2 m-4 border bg-slate-500/40 border-slate-400/60 block rounded-full hover:border-none hover:bg-tulisan-terang group md:w-24 lg:w-28 transition-all" >
+              <img src="../img/team/merche.png" alt="merche" class="">
+            </a>
+            <a href="" target="_blank" class="w-20 p-2 m-4 border bg-slate-500/40 border-slate-400/60 block rounded-full hover:border-none hover:bg-tulisan-terang group md:w-24 lg:w-28 transition-all" >
+              <img src="../img/team/purotti.png" alt="purotti" class="">
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- team section end -->
+
+  <!-- contact section start -->
+  <section id="contact" class="pt-34 pb-32 bg-radial-[at_25%_25%] from-purple-100/60 to-purple-200/40 to-75%">
+    <div class="container m-auto 2xl:px-[100px]">
+      <div class="w-full px-4 max-w-xl m-auto mb-12"
+      data-aos="fade-up"
+      data-aos-duration="1500">
+        <h2 class="text-lime-800 font-bold text-xl text-center block mb-2 md:text-2xl xl:text-3xl">
+          Contact
+        </h2>
+        <h3 class="font-bold text-3xl mb-4 text-tulisan-gelap text-center md:text-4xl">
+          Hubungi Lebih Lanjut
+        </h3>
+        <p class="text-lg font-medium text-slate-600 lg:text-lg md:text-xl text-center">
+          Punya proyek menarik? Ingin Berbincang mengenai kerja sama atau peluang lainnya? Tinggalkan pesan anda, saya akan segera menghubungi kamu kembali.
+        </p>
+      </div>
+      
+      <div class="w-full px-4 m-auto md:w-[80%] lg:w-3/4">
+        <form action="" class="w-full flex flex-col">
+          <div class="mb-4">
+            <label for="nama" class="w-fit">
+              <i data-feather="user" class="w-10 text-tulisan-gelap"></i>
+            </label>
+            <input type="text" id="nama" name="nama" placeholder="Silahkan masukkan nama ..." class="w-full mt-3 mb-2 p-2 bg-purple-200/60 rounded text-xl text-tulisan-gelap focus:ring-1 focus:ring-secondary">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="w-fit">
+              <i data-feather="mail" class="w-10 text-tulisan-gelap"></i>
+            </label>
+            <input type="email" id="email" name="email" placeholder="Silahkan masukkan email ..." class="w-full mt-3 mb-2 p-2 bg-purple-200/60 rounded text-xl text-tulisan-gelap focus:ring-secondary">
+          </div>
+          <div class="mb-4">
+            <label for="pesan" class="w-fit">
+              <i data-feather="message-square" class="w-10 text-tulisan-gelap"></i>
+            </label>
+            <textarea name="message" id="pesan" placeholder="Silahkan tulis pesan ..." class="w-full mt-3 mb-2 p-2 text-tulisan-gelap bg-purple-200/60 rounded text-xl h-30"></textarea>
+          </div>
+          <button type="button" id="btn-kirim" class="p-2 rounded text-lg font-semibold text-tulisan-gelap bg-linear-to-b from-lime-300 to-secondary hover:from-secondary hover:to-lime-300 transition-colors hover:shadow duration-500 hover:inset-1">
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+
+  <!-- footer start -->
+  <footer class="bg-tulisan-gelap">
+    <div class="container m-auto 2xl:px-[100px]">
+      <div class="pt-8 pb-4 px-4">
+        <div class="flex flex-wrap border border-b-slate-400 border-r-0 border-l-0 border-t-0">
+          <div class="w-full mb-8 lg:w-1/2">
+            <h1 class="font-bold text-4xl text-tulisan-terang mb-4">
+              Akrom sofwan
+            </h1>
+            <h3 class="font-semibold text-2xl text-tulisan-terang mb-2">
+              Hubungi Saya
+            </h3>
+            <p class="text-base font-medium text-tulisan-terang">
+              akrom123@gmail.com
+            </p>
+            <p class="text-base font-medium text-tulisan-terang">
+              Telp/WA 085817304610
+            </p>
+            <p class="text-base font-medium text-tulisan-terang">
+              Jl. Duren - Rt003/Rw002
+            </p>
+            <p class="text-base font-medium text-tulisan-terang">
+              Desa Mangli, Kec. Randudongkal, Kab. Pemalang
+            </p>
+            <a href="https://maps.app.goo.gl/ncjipYbZphNXkP879" id="peta" target="_blank" class="text-slate-500 font-medium text-base hover:text-slate-300 hover:underline transition duration-300 block w-fit">
+              Lihat Alamat
+            </a>
+          </div>
+  
+          <div class="link-nav-bawah w-full mb-4 lg:w-1/2 lg:mt-6">
+            <a href="#home" class="block font-medium text-lg transition-all duration text-secondary hover:text-lime-600 w-fit">
+              Home
+            </a>
+            <a href="#about" class="block font-medium text-lg transition-all duration text-secondary hover:text-lime-600 w-fit">
+              About Me
+            </a>
+            <a href="#project" class="block font-medium text-lg transition-all duration text-secondary hover:text-lime-600 w-fit">
+              Project Portfolio
+            </a>
+            <a href="#team" class="block font-medium text-lg transition-all duration text-secondary hover:text-lime-600 w-fit">
+              Team
+            </a>
+            <a href="#contact" class="block font-medium text-lg transition-all duration text-secondary hover:text-lime-600 w-fit">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 pb-4">
+        <div class="sosmed-bawah flex items-center justify-center pb-4 gap-3">
+          <a href="https://www.instagram.com/akrom_safyan/" target="_blank" class="border p-2 w-10 h-10 rounded-full border-tulisan-gelap hover:bg-tulisan-terang group transition-all duration-300 bg-slate-500 group">
+            <svg role="img" class="stroke-current" viewBox="0 0 24 24" class="group-hover:fill-[#fff]" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" /></svg>
+          </a>
+          <a href="https://www.tiktok.com/@akrom_areskha" target="_blank" class="border p-2 w-10 h-10 rounded-full border-tulisan-gelap hover:bg-tulisan-terang group transition-all duration-300 bg-slate-500 group">
+            <svg role="img" class="stroke-current" viewBox="0 0 24 24" class="group-hover:fill-[#fff]" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://web.facebook.com/akrom.slamming" target="_blank" class="border p-2 w-10 h-10 rounded-full border-tulisan-gelap hover:bg-tulisan-terang group transition-all duration-300 bg-slate-500 group">
+            <svg role="img" class="stroke-current" viewBox="0 0 24 24" class="group-hover:fill-[#fff]" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+          </a>
+        </div>
+
+        <div>
+          <h3 class="text-tulisan-terang text-center text-sm">
+            By Akrom | &copy;2025
+          </h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+<script src="../js/script.js">
+
+</script>
+
+<script>
+  feather.replace();
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
