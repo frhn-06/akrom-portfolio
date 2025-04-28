@@ -51,9 +51,11 @@ body {
 
 
 
+
 .nav-buka {
-    @apply right-4;
+    @apply rotate-x-0;
 }
+
 
 
 .after::after {
@@ -172,8 +174,8 @@ body {
 
 
 
-.btn-foto-hover-tangan, .btn-kirim-contact {
-    @apply bg-linear-to-b from-lime-300 to-secondary shadow;
+.btn-foto-hover-tangan, .btn-kirim-contact, .btn-hubungi-saya-aktif {
+    @apply bg-linear-to-b from-secondary to-lime-300 shadow;
 }
 
 

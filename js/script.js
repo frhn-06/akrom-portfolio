@@ -209,6 +209,11 @@ document.body.addEventListener('touchstart', (e) => {
 
 
 
+const btnHubungi = document.querySelector('.btn-hubungi-saya');
+btnHubungi.addEventListener('touchstart', () => {
+    btnHubungi.classList.toggle('btn-hubungi-saya-aktif');
+});
+
 
 
 // /////////////////////////////

@@ -396,9 +396,6 @@
   .origin-left {
     transform-origin: left;
   }
-  .origin-top {
-    transform-origin: top;
-  }
   .-translate-y-full {
     --tw-translate-y: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -416,10 +413,6 @@
   .scale-x-0 {
     --tw-scale-x: 0%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-  .rotate-x-90 {
-    --tw-rotate-x: rotateX(90deg);
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .animate-bounce {
     animation: var(--animate-bounce);
@@ -495,12 +488,6 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-black\/40 {
-    background-color: color-mix(in srgb, #000 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
-    }
-  }
   .bg-black\/50 {
     background-color: color-mix(in srgb, #000 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -539,9 +526,6 @@
   }
   .bg-tulisan-terang {
     background-color: var(--color-tulisan-terang);
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .bg-linear-30 {
     --tw-gradient-position: 30deg;
@@ -839,6 +823,10 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
   }
   .text-shadow-lg\/60 {
     --tw-text-shadow-alpha: 60%;
@@ -1185,12 +1173,6 @@
       width: 100%;
     }
   }
-  .lg\:rotate-x-0 {
-    @media (width >= 64rem) {
-      --tw-rotate-x: rotateX(0deg);
-      transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-    }
-  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -1354,10 +1336,6 @@ body {
   translate: var(--tw-translate-x) var(--tw-translate-y);
   rotate: 45deg;
 }
-.nav-buka {
-  --tw-rotate-x: rotateX(0deg);
-  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-}
 .after::after {
   content: '';
   margin-top: 3px;
@@ -1471,15 +1449,15 @@ body {
 .btn-selengkapnya-aktif {
   color: var(--color-slate-300);
 }
-.btn-foto-hover-tangan, .btn-kirim-contact, .btn-hubungi-saya-aktif {
+.btn-foto-hover-tangan, .btn-kirim-contact {
   --tw-gradient-position: to bottom;
   @supports (background-image: linear-gradient(in lab, red, red)) {
     --tw-gradient-position: to bottom in oklab;
   }
   background-image: linear-gradient(var(--tw-gradient-stops));
-  --tw-gradient-from: var(--color-secondary);
+  --tw-gradient-from: var(--color-lime-300);
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  --tw-gradient-to: var(--color-lime-300);
+  --tw-gradient-to: var(--color-secondary);
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1544,26 +1522,6 @@ body {
   syntax: "*";
   inherits: false;
   initial-value: 1;
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -1810,11 +1768,6 @@ body {
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
