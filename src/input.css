@@ -170,7 +170,9 @@ body {
     @apply text-slate-300;
 }
 
-
+.selengkapnya-kena-jempol {
+    @apply text-black
+}
 
 
 

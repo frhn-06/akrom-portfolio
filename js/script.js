@@ -35,16 +35,26 @@ window.addEventListener('scroll', () => {
 // muncul nav
 const btn = document.querySelector('#btn');
 
-// let navbarActive = null;
+const navbar = document.querySelector('.nav');
+const span = btn.querySelectorAll('span');
 btn.addEventListener('click', () => {
-    const span = btn.querySelectorAll('span');
     span[0].classList.toggle('burger-line-atas');
     span[1].classList.toggle('burger-line-tengah');
     span[2].classList.toggle('burger-line-bawah');
-    
-    const navbar = document.querySelector('.nav');
+
     navbar.classList.toggle('nav-buka');
-    
+});
+
+
+document.body.addEventListener('click', (e) => {
+    // console.log(e.target);
+    if(e.target != navbar && e.target != btn && e.target != span[0] && e.target != span[1] && e.target != span[2] && e.target != navbar.querySelectorAll('a')[0] && e.target != navbar.querySelectorAll('a')[1] && e.target != navbar.querySelectorAll('a')[2] && e.target != navbar.querySelectorAll('a')[3] && e.target != navbar.querySelectorAll('a')[4]) {
+        span[0].classList.remove('burger-line-atas');
+        span[1].classList.remove('burger-line-tengah');
+        span[2].classList.remove('burger-line-bawah');
+
+        navbar.classList.remove('nav-buka');
+    }
 });
 
 
@@ -211,8 +221,12 @@ document.body.addEventListener('touchstart', (e) => {
 
 const btnHubungi = document.querySelector('.btn-hubungi-saya');
 btnHubungi.addEventListener('touchstart', () => {
-    btnHubungi.classList.toggle('btn-hubungi-saya-aktif');
+    btnHubungi.classList.add('btn-hubungi-saya-aktif');
 });
+btnHubungi.addEventListener('touchend', () => {
+    btnHubungi.classList.remove('btn-hubungi-saya-aktif');
+});
+
 
 
 
@@ -296,6 +310,16 @@ document.body.addEventListener('touchstart', (e) => {
 });
 
 
+
+// selengkapnya
+btnSelengkapnya.forEach((bs) => {
+    bs.addEventListener('touchstart', () => {
+        bs.classList.add('selengkapnya-kena-jempol');
+    });
+    bs.addEventListener('touchend', () => {
+        bs.classList.remove('selengkapnya-kena-jempol');
+    });
+});
 
 
 
